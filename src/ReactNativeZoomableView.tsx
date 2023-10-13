@@ -949,8 +949,8 @@ class ReactNativeZoomableView extends Component<
    */
   async zoomTo(
     newZoomLevel: number,
-    height: number,
-    width: number,
+    height: number = 0,
+    width: number = 0,
   ): Promise<boolean> {
     if (
       // if we would go out of our min/max limits -> abort
